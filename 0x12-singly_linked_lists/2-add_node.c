@@ -13,13 +13,13 @@
 int _strlen(const char *s)
 
 {
-        int c = 0;
+	int c = 0;
 
 	 while (s[c] != '\0')
-        {
-                c++;
-        }
-        return (c);
+	{
+		c++;
+	}
+	return (c);
 }
 
 /**
@@ -33,7 +33,7 @@ int _strlen(const char *s)
 	list_t *add_node(list_t **head, const char *str)
 {
 	list_t *addnew;
-		
+
 	addnew = malloc(sizeof(list_t));
 	if (addnew == NULL)
 		return (NULL);
