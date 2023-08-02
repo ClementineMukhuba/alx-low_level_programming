@@ -1,16 +1,11 @@
 #include <stdio.h>
 
-/**
-  * First _sentence – Print the sentence provided
-  * before the main function is executed.
-  */
-
 void First(void) __attribute__ ((constructor));
 
 /**
-* Execution of First sentence function
-*
-*/
+ * First – Prints the sentence provided
+ * before the main function is executed.
+ */
 void First(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
