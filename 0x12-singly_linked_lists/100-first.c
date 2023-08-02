@@ -5,13 +5,13 @@
   * before the main function is executed.
   */
 
-void First_sentence(void) __attribute__ ((constructor));
+void First(void) __attribute__ ((constructor));
 
 /**
 * Execution of First sentence function
+*
 */
-
-void First_sentence (void)
+void First(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
