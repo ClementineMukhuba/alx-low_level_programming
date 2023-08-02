@@ -38,3 +38,8 @@ int main(int argc, char *argv[])
 			break;
 		}
 
+		printf("%02hhx ", arr[i]);
+	}
+	return (0);
+}
+
