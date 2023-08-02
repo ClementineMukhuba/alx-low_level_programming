@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
-  * add_node_end - Adds a new node at send of a linked list 
+  * add_node_end - Adds a new node at send of a linked list
   * @head: The head of list_t linked list
   * @str: The string to add into node.
   *
