@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 
 	from = open(argv[1], O_RDONLY);
 
-	to = open(argv[2], O-CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
+	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	error_file(from, to, argv);
 
 	reschar = 1024;
@@ -76,5 +76,4 @@ int main(int argc, char *argv[])
 	}
 	return(0);
 }
-
 
