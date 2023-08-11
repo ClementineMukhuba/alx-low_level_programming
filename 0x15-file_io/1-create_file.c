@@ -9,22 +9,23 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fde, res = 1, countn = 0;
+	int file, res = 1, countn = 0;
 
 	if (!filename)
 		return (-1);
-	fde = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-	if (fde == -1)
+	file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	
+	if (file == -1)
 		return (-1);
 
 	if (text_content)
 	{
 		while (text_content[countn])
 			countn++;
-		res = write(fde, text_content, countn);
+		res = write(file, text_content, countn);
 	}
 	if (res == -1)
 		return (-1);
-		close(fde);
+		close(file);
 	return (1);
 }
