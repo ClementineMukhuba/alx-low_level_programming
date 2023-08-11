@@ -3,7 +3,7 @@
 
 /**
  * error_file - checks errors
- * @from: file from 
+ * @from: file from
  * @to: file to
  * @argv: Arguments path
  *
