@@ -24,7 +24,7 @@ int create_file(const char *filename, char *text_content)
 		res = write(fde, text_content, countn);
 	}
 	if (res == -1)
-		return (-1)
+		return (-1);
 		close(fde);
 	return (1);
 }
