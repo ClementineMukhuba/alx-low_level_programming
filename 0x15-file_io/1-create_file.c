@@ -24,7 +24,7 @@ int create_file(const char *filename, char *text_content)
 	file = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	_write = write(file, text_content, countn);
 
-	if(file == -1 || res == -1)
+	if(file == -1 || _write == -1)
 
 		return (-1);
 		
